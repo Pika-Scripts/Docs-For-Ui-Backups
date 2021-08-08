@@ -1,0 +1,31 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Pika-Scripts/Ui-Backups/main/UwuWare%20Ui", true))()
+
+local Window = Library:CreateWindow("thing")
+
+local folder = Window:AddFolder('stuff')
+
+folder:AddToggle({text = "This is a toggle", callback = function(v)
+print(v) 
+end})
+
+folder:AddButton({text = 'button', callback = function()
+print('button clicker') 
+end})
+
+folder:AddSlider({text = 'slider', min = 1, max = 100, callback = function(v)
+print(v) 
+end})
+
+folder:AddList({text = 'option', values = {'yo', 'yes'}, callback = function(v)
+print(v) 
+end})
+
+folder:AddBox({text = 'text box', callback = function(v)
+print(v) 
+end})
+
+folder:AddColor({text = 'color', callback = function(v) 
+print(v) 
+end})
+
+Library:Init()
